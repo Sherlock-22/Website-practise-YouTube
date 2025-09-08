@@ -1,0 +1,136 @@
+ .video-cards-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    column-gap:16px;
+    row-gap:32px;
+}
+
+.thumbnail-row{
+    margin-bottom:8px;
+    position:relative;
+}
+
+.thumbnail{
+    width:100%;
+    cursor:pointer;
+}
+
+.video-info-grid{
+    display:grid;
+    grid-template-columns:50px 1fr;
+    cursor:pointer;
+}
+
+.channel-picture{
+    display:inline-block;
+    position:relative;
+}
+
+.profile-picture{
+    width:36px;
+    border-radius:30px;
+}
+
+/*This is a style comment*/
+
+.video-title{
+    font-size:16px;
+    line-height:24px;
+    margin-bottom:10px;
+    font-weight:500;
+}
+
+.video-author,.video-stats{
+    font-size:12px;
+    font-weight:400;
+    color:#606060;
+}
+
+.video-author{
+    margin-bottom:4px;
+}
+
+.video-time{
+    background-color:black;
+    font-size:12px;
+    font-weight:500;
+    color:white;
+    position:absolute;
+    bottom:8px;
+    right:4px;
+    padding:4px 4px;
+}
+
+.channel-picture:hover .channel-card{
+    opacity:1;
+}
+
+.channel-card{
+    display:flex;
+    width:200px;
+    background-color:white;
+    align-items:center;
+    border-radius:8px;
+    box-shadow:1px 1px 20px rgba(0,0,0,0.25);
+    padding: 8px 12px;
+    height: 64px;
+
+    position:absolute;
+    z-index:300;
+
+    opacity:0;
+}
+
+.channel-picture-2{
+    width:50px;
+    border-radius:27px;
+}
+
+.channel-info{
+    flex:1;
+    margin-left:12px;
+}
+
+.channel-name{
+    font-size:16px;
+    font-weight:bold;
+    margin-bottom:8px;
+}
+
+.no-of-subs{
+    font-size:12px;
+    color:#606060;
+}
+
+@media (max-width:1000px) {
+    .video-cards-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media (min-width:1001px) and (max-width:1999px){
+    .video-cards-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 2000px) {
+  .video-title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: 2000px) {
+  .video-author,
+  .video-stats {
+    font-size: 16px;
+  }
+}
+
+
+@media (min-width:2000px) {
+    .video-cards-grid{
+        grid-template-columns:1fr 1fr 1fr 1fr;
+    }
+}
